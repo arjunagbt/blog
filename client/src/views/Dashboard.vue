@@ -55,7 +55,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('http://localhost:3000/users/profile', {
+    axios.get('http://blog-server.arjunagbt.icu/users/profile', {
       headers: {
         token: localStorage.getItem('token')
       }

@@ -25,7 +25,7 @@ export default {
   },
   watch: {
     triggerVal () {
-      axios.get(`http://localhost:3000/comments/${this.$route.params.id}`)
+      axios.get(`http://blog-server.arjunagbt.icu/comments/${this.$route.params.id}`)
         .then(response => {
           this.comments = response.data.result
         })
@@ -35,7 +35,7 @@ export default {
     }
   },
   created () {
-    axios.get(`http://localhost:3000/comments/${this.$route.params.id}`)
+    axios.get(`http://blog-server.arjunagbt.icu/comments/${this.$route.params.id}`)
       .then(response => {
         this.comments = response.data.result
       })

@@ -23,7 +23,7 @@ export default {
     }
   },
   created () {
-    axios.get('http://localhost:3000/articles')
+    axios.get('http://blog-server.arjunagbt.icu/articles')
       .then(response => {
         this.articles = response.data.result
       })

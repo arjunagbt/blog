@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     createComment () {
-      axios.post(`http://localhost:3000/comments/${this.$route.params.id}`, {
+      axios.post(`http://blog-server.arjunagbt.icu/comments/${this.$route.params.id}`, {
         comment_body: this.comment_body
       }, {
         headers: {

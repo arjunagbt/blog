@@ -28,7 +28,7 @@ export default {
   methods: {
     deletecomment (id) {
       if (confirm('Are you sure you want to delete this comment?')) {
-        axios.delete(`http://localhost:3000/comments/${id}`, {
+        axios.delete(`http://blog-server.arjunagbt.icu/comments/${id}`, {
           headers: {
             token: localStorage.getItem('token')
           }
@@ -44,7 +44,7 @@ export default {
   },
   watch: {
     triggerCom () {
-      axios.get('http://localhost:3000/comments/myComments', {
+      axios.get('http://blog-server.arjunagbt.icu/comments/myComments', {
         headers: {
           token: localStorage.getItem('token')
         }
@@ -58,7 +58,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('http://localhost:3000/comments/myComments', {
+    axios.get('http://blog-server.arjunagbt.icu/comments/myComments', {
       headers: {
         token: localStorage.getItem('token')
       }

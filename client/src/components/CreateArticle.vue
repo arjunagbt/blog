@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     createArticle () {
-      axios.post('http://localhost:3000/articles', {
+      axios.post('http://blog-server.arjunagbt.icu/articles', {
         title: this.title,
         article_body: this.article_body
       }, {

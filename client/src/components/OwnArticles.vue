@@ -32,7 +32,7 @@ export default {
     },
     deleteArticle (id) {
       if (confirm('Are you sure you want to delete this article?')) {
-        axios.delete(`http://localhost:3000/articles/${id}`, {
+        axios.delete(`http://blog-server.arjunagbt.icu/articles/${id}`, {
           headers: {
             token: localStorage.getItem('token')
           }
@@ -48,7 +48,7 @@ export default {
   },
   watch: {
     triggerVal () {
-      axios.get('http://localhost:3000/articles/myArticles', {
+      axios.get('http://blog-server.arjunagbt.icu/articles/myArticles', {
         headers: {
           token: localStorage.getItem('token')
         }
@@ -62,7 +62,7 @@ export default {
     }
   },
   created () {
-    axios.get('http://localhost:3000/articles/myArticles', {
+    axios.get('http://blog-server.arjunagbt.icu/articles/myArticles', {
       headers: {
         token: localStorage.getItem('token')
       }

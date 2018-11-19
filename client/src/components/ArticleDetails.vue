@@ -30,7 +30,7 @@ export default {
     }
   },
   created () {
-    axios.get(`http://localhost:3000/articles/${this.$route.params.id}`)
+    axios.get(`http://blog-server.arjunagbt.icu/articles/${this.$route.params.id}`)
       .then(response => {
         this.article = response.data.result
       })

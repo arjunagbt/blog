@@ -10,7 +10,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/articles">Articles</router-link> |
       <router-link to="/dashboard">Dashboard</router-link> |
-      <router-link to="/chat">LiveChat</router-link>
+      <router-link to="/chat">LiveChat</router-link> |
       <a href="#" @click = "logout">Log out</a>
     </div>
     <router-view @isLogin = "login = true"/>

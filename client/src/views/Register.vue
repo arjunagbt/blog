@@ -14,7 +14,7 @@
       <label for="registerInputPassword1">Password</label>
       <input type="password" class="form-control" id="registerInputPassword1" v-model="password" placeholder="Password">
     </div>
-      <button type="submit" class="btn btn-primary">Register</button>
+      <button type="submit" class="btn btn-primary" @click="register">Register</button>
     </div>
 </template>
 
@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     register () {
-      axios.post('http://localhost:3000/users/register', {
+      axios.post('http://blog-server.arjunagbt.icu/users/register', {
         name: this.name,
         email: this.email,
         password: this.password

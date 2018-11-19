@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     loginSuccess () {
-      axios.post('http://localhost:3000/users/login', {
+      axios.post('http://blog-server.arjunagbt.icu/users/login', {
         email: this.email,
         password: this.password
       })
