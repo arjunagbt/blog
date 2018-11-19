@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "test": "NODE_ENV=test nyc ./node_modules/mocha/bin/mocha"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^6.1.0",
+    "express": "~4.16.0",
+    "firebase": "^5.5.8",
+    "jsonwebtoken": "^8.3.0",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.3.11",
+    "morgan": "~1.9.0",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "nyc": "^13.1.0"
+  }
+}
